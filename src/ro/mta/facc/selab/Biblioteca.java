@@ -17,7 +17,14 @@ public class Biblioteca {
     {
         carti.add(carte);
     }
-
+    public Biblioteca(ArrayList<Carte>list)
+    {
+        carti=new ArrayList<Carte>();
+        for(Carte c: list)
+        {
+            carti.add(c);
+        }
+    }
     @Override
     public String toString() {
         StringBuilder builder=new StringBuilder();
